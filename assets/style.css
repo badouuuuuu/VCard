@@ -1,17 +1,27 @@
-#grid-section{
+body {
     margin: 0 auto;
-    background: yellow;
+    background-image: url(./image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 960px;
     width:100%;
 }
 
+#grid-section{
+    padding-top: 130px;
+}
+
 #container-cadre {
-   
+    margin:0 auto;
     left:25%;
     right:50%;
     display: grid;
-    background-color: #B70000;
-    height: 450px;
+    background: rgba(7, 27, 35, 0.705);
+    -webkit-box-shadow: 23px 8px 255px 6px rgba(161,0,129,1);
+    -moz-box-shadow: 23px 8px 255px 6px rgba(161,0,129,1);
+    box-shadow: 23px 8px 255px 6px rgba(161,0,129,1);
+    border-radius: 25px 25px;
+    height: 630px;
     width: 960px;
     grid-template-columns:  20% 60% 20%;
     grid-template-rows: 20% 60% 20%;
@@ -21,11 +31,47 @@
 
 #pics-top {
     grid-column: 2 / 3;
+    padding-top: 15px;
 }
 
 .pics {
-    vertical-align: 50%;
     width: 15%;
-    border-radius: 50%;
-   
+    border-radius: 50px;
+    -webkit-box-shadow: -6px 9px 300px 117px rgba(235,30,194,0.36);
+    -moz-box-shadow: -6px 9px 300px 117px rgba(235,30,194,0.36);
+    box-shadow: -6px 9px 300px 117px rgba(235,30,194,0.36);
+}
+
+nav {
+    display: grid;
+    grid-row: 2 / 3;
+    justify-content: right;
+    height: 100px;
+    width: 40px;
+}
+
+
+button  {
+    display: inline;
+    background-color: rgba(9, 50, 66, 0.774);
+    color:orange;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+a:hover {
+    color:white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+a {
+    color:orange;
+    text-decoration: none;
+}
+
+footer {
+    display:grid;
 }
