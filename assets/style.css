@@ -1,50 +1,31 @@
- html body {
-    font-family: 'Montserrat', sans-serif;
-    height: 100%;
-    background-color: red; 
-}
-
-#allpage {
-    
+#grid-section{
     margin: 0 auto;
-    width: 100%;
-    height: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: yellow;
+    height: 960px;
+    width:100%;
 }
 
-#corps {
-
+#container-cadre {
+   
+    left:25%;
+    right:50%;
+    display: grid;
+    background-color: #B70000;
+    height: 450px;
+    width: 960px;
+    grid-template-columns:  20% 60% 20%;
+    grid-template-rows: 20% 60% 20%;
+    grid-gap: 2px;
     text-align: center;
-    margin:0 auto;
 }
 
-#background {
-
-    height: 1080px;
-    width: 1920px;
-    display: inline-block;
+#pics-top {
+    grid-column: 2 / 3;
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    background: black;
-}
-
-.navigation-left {
-    left: 0px; 
-    width: 100px;
-}
-
-
-
-
-a {
-    padding-bottom: 10px;
-    list-style: none;
-    text-decoration: none;
-    color: white;
+.pics {
+    vertical-align: 50%;
+    width: 15%;
+    border-radius: 50%;
+   
 }
